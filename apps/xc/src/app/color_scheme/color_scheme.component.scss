@@ -1,0 +1,11 @@
+mat-card{
+    margin-top: 2rem;
+    width: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 50px;
+    div{
+        border-left: black 1px;
+        cursor: pointer;
+    }
+}

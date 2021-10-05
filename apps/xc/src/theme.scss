@@ -1,0 +1,247 @@
+/* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+    height: 100%;
+    }
+
+    body {
+    margin: 0;
+    font-family: Roboto, 'Helvetica Neue', sans-serif;
+    }
+
+    * {
+    box-sizing: border-box;
+    }
+
+    section {
+    min-width: 256px;
+    }
+
+    .mat-tooltip.nftooltip {
+    background: var(--nf-primary) !important;
+    font-size: .8rem;
+    }
+
+    .selected-row {
+    * {
+    color: white !important;
+    }
+    background-color: var(--nf-primary-lighter) !important;
+    }
+
+    .snackbar {
+    min-width: unset !important;
+    max-width: 50vw !important;
+    }
+    .snackbar-error {
+    background: #d32f2f !important;
+    color: white !important;
+    // pointer-events: none !important;
+    }
+    .snackbar-success {
+    background: #4caf50 !important;
+    color: white !important;
+    // pointer-events: none !important;
+    }
+    .snackbar-info {
+    //background: #00bcd4 !important;
+    background: var(--nf-primary) !important;
+    color: white !important;
+    // pointer-events: none !important;
+    }
+
+    .errorColor {
+    color: #d32f2f !important;
+    }
+
+    .warnColor {
+    color: #FFA500 !important;
+    }
+
+    .successColor {
+    color: #4caf50 !important;
+    }
+
+    .accentColor {
+    color: var(--nf-accent) !important;
+    }
+
+    .accentColorLighter {
+    color: var(--nf-accent-darker);
+    }
+
+    .infoColor {
+    //color: #00bcd4 !important;
+    color: var(--nf-primary) !important;
+    }
+
+    .successColor-bg {
+    background-color: #4caf50 !important;
+    }
+
+    .warnColor-bg {
+    background-color: #FFA500 !important;
+    }
+
+    .errorColor-bg {
+    background-color: #d32f2f !important;
+    }
+
+    .ym-container {
+    .mat-drawer-backdrop {
+    position: fixed !important;
+    }
+    }
+
+    .ym-filter-menu {
+    width: 380px;
+    max-width: 380px !important;
+    }
+
+    .mat-tab-group.mat-tab-fill-height {
+    height: 100%;
+    }
+
+    .mat-tab-group.mat-tab-fill-height .mat-tab-body-wrapper {
+    flex: 1 1 100%;
+    margin-top: 1em;
+    }
+
+    .mat-tab-group.mat-tab-fill-height-no-margin .mat-tab-body-wrapper {
+    flex: 1 1 100%;
+    }
+
+    mat-select-filter {
+    .mat-filter {
+    border-bottom: 1px solid rgba(128,128,128, .1) !important;
+    }
+
+    form {
+    background-color: transparent !important;
+    }
+    }
+
+    .mat-select-filter-wrapper {
+    position: sticky !important;
+    z-index: 100;
+    top: 0;
+    box-shadow: none !important;
+    padding: 0 !important;
+    border-radius: 0 !important;
+    }
+
+    @mixin mat-table-columns($columns)
+    {
+    .mat-column-
+    {
+        @each $colName, $props in $columns {
+
+            $width: map-get($props, 'width');
+
+            &#{$colName} 
+            {
+                //flex: $width;
+                min-width: $width;
+
+                @if map-has-key($props, 'color') 
+                {
+                    color: map-get($props, 'color');
+                }
+            }  
+        }
+    }
+    }
+
+    // .vehicleTypeContainer {
+    //   display: grid;
+    //   grid-auto-flow: column;
+    //   align-items: center;
+    //   gap: .5em;
+    // }
+
+    *:focus {
+    outline: none !important;
+    }
+
+    .dialog-modal {
+    .mat-dialog-actions {
+    direction: rtl;
+    }
+    }
+
+    span.mat-badge-content {
+    font-size: .6em;
+    }
+
+    [hidden] {
+    display: none !important;
+    }
+
+
+    .mat-tab-label-content {
+    mat-icon {
+    margin-right: 8px;
+    }
+    }
+
+    mat-table {
+    .mat-column-actions {
+    min-width: 145px;
+    max-width: 145px;
+    text-align: end;
+    justify-content: flex-end;
+    }
+
+    .mat-column-vehicleType {
+    min-width: 56px;
+    max-width: 56px;
+    }
+
+    .mat-column-_id {
+    min-width: 40px;
+    max-width: 40px;
+    }
+
+    .mat-column-link {
+    min-width: 24px;
+    max-width: 24px;
+    }
+
+    .mat-column-description {
+    max-width: 200px;
+    }
+
+    mat-cell.mat-column-link {
+    mat-icon {
+        cursor: pointer;
+    }
+    }
+
+    .truncateTextWrapper {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    }
+
+    mat-cell,
+    mat-header-cell,
+    mat-footer-cell {
+    &:first-of-type {
+        margin-right: 5px;
+    }
+
+    &:last-of-type {
+        margin-left: 5px;
+    }
+
+    &:not(:first-of-type, :last-of-type) {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    }
+
+    mat-footer-cell {
+    font-weight: bold;
+    }
+}

@@ -82,8 +82,8 @@
             "polyfills": "apps/xc/src/polyfills.ts",
             "tsConfig": "apps/xc/tsconfig.app.json",
             "inlineStyleLanguage": "scss",
-            "assets": ["apps/xc/src/favicon.ico", "apps/xc/src/assets"],
-            "styles": ["apps/xc/src/styles.scss"],
+            "assets": ["apps/xc/src/favicon.ico", "apps/xc/src/assets", { "glob": "mdi.svg", "input": "./node_modules/@mdi/angular-material", "output": "./assets" }],
+            "styles": ["apps/xc/src/styles.scss", "apps/xc/src/theme.scss"],
             "scripts": []
           },
           "configurations": {
@@ -185,6 +185,7 @@
     }
   },
   "cli": {
+    "analytics": false,
     "defaultCollection": "@nrwl/angular",
     "packageManager": "npm"
   },
