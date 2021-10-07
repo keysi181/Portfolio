@@ -1,0 +1,13 @@
+<header>
+    <xc-portfolio-colorscheme></xc-portfolio-colorscheme>
+    <h1>Überschrift</h1>
+    <div id="menue">
+        <mat-icon id="icon">lunch_dining</mat-icon>
+        <div id=items>
+            <mat-card class="item" *ngFor="let item of menueitems">
+                <mat-card-header><mat-icon id="icon">{{item.icon}}</mat-icon></mat-card-header>
+                <mat-card-content>{{item.name}}</mat-card-content>
+            </mat-card>
+        </div>
+    </div>
+</header>

@@ -1,5 +1,6 @@
 <mat-card>
     <div *ngFor="let theme of themes" (click)="setTheme(theme.name)">
         <mat-icon *ngIf="_colorScheme.currentActive() !== theme.name">{{theme.icon}}</mat-icon>
+        <p *ngIf="_colorScheme.currentActive() !== theme.name">{{theme.name}}</p>
     </div>
 </mat-card>

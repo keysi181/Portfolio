@@ -1,0 +1,42 @@
+header{
+    display: grid;
+    grid-template-columns: 20rem 1fr 20rem;
+    h1{
+        margin-top:2rem;
+        text-align: center;
+    }
+
+    #menue{
+        text-align: end;
+        padding-right: 4rem;
+        margin-top: 2rem;
+        #icon{
+            width: 4rem;
+            height: 4rem;
+            font-size: 3rem;
+            cursor: pointer;
+
+        }
+        #items{
+            display: none;
+            margin-left: 9rem;
+            cursor: pointer;
+
+            .item{
+                padding-top: 2rem;
+                text-align: center;
+                margin-bottom: 0.2rem;
+                width: 10rem;
+                height: 10rem;
+            }
+        }
+    
+        #icon:hover + #items{
+            display: block;
+        }
+        #items:hover{
+            display: block;
+            
+        }
+    }
+}

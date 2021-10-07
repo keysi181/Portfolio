@@ -9,3 +9,16 @@ mat-card{
         cursor: pointer;
     }
 }
+
+mat-card{
+    div{
+        border-left: black 1px;
+        cursor: pointer;
+    }
+    p{
+        display: none;
+    }
+    mat-icon:hover + p{
+        display: block;
+    }
+}

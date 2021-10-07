@@ -1,20 +1,23 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule, DomSanitizer } from '@angular/platform-browser';
-
-import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+import { MatButtonModule } from "@angular/material/button";
+import { MatCardModule } from '@angular/material/card';
 import { MatIconModule, MatIconRegistry } from '@angular/material/icon';
+import { MatListModule } from '@angular/material/list';
+import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
-import {MatButtonModule} from "@angular/material/button";
-import {MatListModule} from '@angular/material/list';
-import {MatSidenavModule} from '@angular/material/sidenav';
-import {MatToolbarModule} from '@angular/material/toolbar';
-import {MatCardModule} from '@angular/material/card';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { BrowserModule, DomSanitizer } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AppComponent } from './app.component';
 import { ColorSchemeComponent } from './color_scheme/color_scheme.component';
+import { PagesComponent } from './pages/pages.component';
+import { HeaderComponent } from './header/header.component';
+
 
 @NgModule({
-  declarations: [AppComponent, ColorSchemeComponent],
+  declarations: [AppComponent, ColorSchemeComponent, PagesComponent, HeaderComponent],
   imports: [
     BrowserModule,
     HttpClientModule,
@@ -26,7 +29,8 @@ import { ColorSchemeComponent } from './color_scheme/color_scheme.component';
     MatListModule,
     MatSidenavModule,
     MatToolbarModule,
-    MatCardModule
+    MatCardModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent],
