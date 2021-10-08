@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
+
   public menueitems =[
     {
       name: 'About',
@@ -29,9 +30,9 @@ export class HeaderComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+
   }
   
-  isOpen = false;
 
 
 }

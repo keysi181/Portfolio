@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ColorSchemeService } from '../color_scheme/color_scheme.service';
 
 @Component({
   selector: 'xc-portfolio-pages',
@@ -6,8 +7,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./pages.component.scss'],
 })
 export class PagesComponent implements OnInit {
-
-  constructor() { }
+  themecolor = localStorage.getItem('prefers-color')
+  
+  constructor(private colorScheme: ColorSchemeService) { }
 
   ngOnInit(): void {
   }

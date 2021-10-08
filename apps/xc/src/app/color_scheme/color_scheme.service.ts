@@ -1,4 +1,5 @@
 import { Injectable, Renderer2, RendererFactory2 } from '@angular/core';
+import { BehaviorSubject } from 'rxjs';
 
 @Injectable({
     providedIn: 'root'
@@ -8,6 +9,9 @@ export class ColorSchemeService {
     private colorScheme!: string;
     // Define prefix for clearer and more readable class names in scss files
     private colorSchemePrefix = 'color-scheme-';
+    private addUsuarioSource = new BehaviorSubject<string>('false');
+    public addUsuario$ = this.addUsuarioSource.asObservable();
+  
 
     constructor(rendererFactory: RendererFactory2) {
         // Create new renderer from renderFactory, to make it possible to use renderer2 in a service
@@ -28,13 +32,13 @@ export class ColorSchemeService {
         }
     }
 
-    _setColorScheme(scheme: string) {
+    _setColorScheme(scheme: string){
         this.colorScheme = scheme;
         // Save prefers-color-scheme to localStorage
-        localStorage.setItem('prefers-color', scheme);
+        localStorage.setItem('prefers-color', this.colorScheme);
     }
 
-    _getColorScheme() {
+    _getColorScheme(){
         const localStorageColorScheme = localStorage.getItem('prefers-color');
         // Check if any prefers-color-scheme is stored in localStorage
         if (localStorageColorScheme) {

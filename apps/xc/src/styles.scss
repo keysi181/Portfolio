@@ -34,15 +34,15 @@ $xc-dark-theme: mat-dark-theme($xc-primary,$xc-accent,$xc-warn);
 
 .color-scheme-light {
   @include angular-material-theme($xc-light-theme);
-  .card-wrapper{
-    color: $xc-black
+  .blendercolor::before{
+    background: linear-gradient(to top, rgb(255, 252, 255), transparent);
   }
 }
 
 .color-scheme-dark {
-  @include angular-material-color($xc-dark-theme);
-  .card-wrapper{
-    color: $xc-white
+  @include angular-material-theme($xc-dark-theme);
+  .blendercolor::before{
+    background: linear-gradient(to top, rgb(45, 45, 45), transparent);
   }
 }
 

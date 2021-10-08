@@ -1,6 +1,5 @@
-import { Component } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Message } from '@xc-portfolio/api-interfaces';
+import { Component } from '@angular/core';
 import { ColorSchemeService } from './color_scheme/color_scheme.service';
 
 @Component({
@@ -9,8 +8,6 @@ import { ColorSchemeService } from './color_scheme/color_scheme.service';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  hello$ = this.http.get<Message>('/api/hello');
-  darkmode = false;
   constructor(private http: HttpClient, private _colorScheme: ColorSchemeService) {
     this._colorScheme.load();
   }
