@@ -1,24 +1,24 @@
 $xc-white:#FBFEF9;
 $xc-grey:#6D8A96;
-$xc-blue:#1B2432;
+$xc-pink:#DE7EEF;
 $xc-black:#121420;
 $xc-green:#379634;
 
-$xc-blue-palette: (
-    50: #e4f3fc,
-    100: #bde1fa,
-    200: #94cff8,
-    300: #6abbf4,
-    400: #4aacf3,
-    500: #2c9ef1,
-    600: #2590e3,
-    700: #1d7ed1,
-    800: #166ebf,
-    900: #0850a0,
-    A100: #c7d9ff,
-    A200: #94b7ff,
-    A400: #6194ff,
-    A700: #4883ff,
+$xc-pink-palette: (
+    50: #F7EFF3,
+    100: #F8D5E6,
+    200: #F8BBD9,
+    300: #F9A0CB,
+    400: #FA86BE,
+    500: #FA6CB1,
+    600: #FB52A4,
+    700: #FC3796,
+    800: #FC1D89,
+    900: #FD037C,
+    A100: #E0BDF3,
+    A200: #DE7EEF,
+    A400: #DB3FEC,
+    A700: #D900E8,
     contrast: (
         50: #000000,
         100: #000000,
@@ -37,17 +37,17 @@ $xc-blue-palette: (
     ),
 );
 
-$xc-grey-palette: (
-    50: #fcfcfc,
-    100: #f7f7f7,
-    200: #f3f3f3,
-    300: #ededed,
-    400: #cccccc,
-    500: #afafaf,
-    600: #848484,
-    700: #707070,
-    800: #505050,
-    900: #2d2d2d,
+$xc-purple-palette: (
+    50: #E0BDF3,
+    100: #DAA8F2,
+    200: #D593F0,
+    300: #CF7EEF,
+    400: #CA69EE,
+    500: #C454EC,
+    600: #BF3FEB,
+    700: #B92AEA,
+    800: #B415E8,
+    900: #AE00E7,
     A100: #ffffff,
     A200: #ffffff,
     A400: #ffffff,

@@ -22,10 +22,13 @@
 /* You can add global styles to this file, and also import other style files */
 
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body { margin: 0; font-family: 'Poppins', "Helvetica Neue", sans-serif; 
+overflow-x: hidden;
+scroll-behavior: smooth;
+}
 
-$xc-primary: mat-palette($xc-blue-palette, 800, 500, 900);
-$xc-accent: mat-palette($xc-grey-palette, 400, 300, 500);
+$xc-primary: mat-palette($xc-pink-palette, 800, 500, 900);
+$xc-accent: mat-palette($xc-purple-palette, 400, 300, 500);
 $xc-warn: mat-palette($mat-red);
 
 $xc-light-theme: mat-light-theme($xc-primary,$xc-accent,$xc-warn);
@@ -34,8 +37,12 @@ $xc-dark-theme: mat-dark-theme($xc-primary,$xc-accent,$xc-warn);
 
 .color-scheme-light {
   @include angular-material-theme($xc-light-theme);
+
   .blendercolor::before{
-    background: linear-gradient(to top, rgb(255, 252, 255), transparent);
+    background: linear-gradient(to top, rgb(250, 250, 250), transparent);
+  }
+  #background{
+    background-color: rgb(250, 250, 250) ;
   }
 }
 
@@ -43,6 +50,10 @@ $xc-dark-theme: mat-dark-theme($xc-primary,$xc-accent,$xc-warn);
   @include angular-material-theme($xc-dark-theme);
   .blendercolor::before{
     background: linear-gradient(to top, rgb(45, 45, 45), transparent);
+  }
+
+  #background{
+    background-color: rgb(45, 45, 45) ;
   }
 }
 

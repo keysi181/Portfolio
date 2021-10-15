@@ -12,8 +12,9 @@ import { BrowserModule, DomSanitizer } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
 import { ColorSchemeComponent } from './color_scheme/color_scheme.component';
-import { PagesComponent } from './pages/pages.component';
 import { HeaderComponent } from './header/header.component';
+import { PagesComponent } from './pages/pages.component';
+
 
 
 @NgModule({
@@ -30,7 +31,7 @@ import { HeaderComponent } from './header/header.component';
     MatSidenavModule,
     MatToolbarModule,
     MatCardModule,
-    FormsModule
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

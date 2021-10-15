@@ -1,6 +1,7 @@
-<header>
+<span id="background" ></span>
+<header (window:scroll)="onScroll($event)" >
     <xc-portfolio-colorscheme></xc-portfolio-colorscheme>
-    <h1></h1>
+    <p id="pagename">XC-Dev</p>
     <div id="menue">
         <mat-icon id="icon">lunch_dining</mat-icon>
         <div id=items>
@@ -12,7 +13,6 @@
     </div>
 </header>
 <div id="headerimg" >
-    <p id="pagename">XC-Dev</p>
-    <img src="../../assets/left.png" alt="cloudleft">
-    <img src="../../assets/right.png" alt="cloudright">
+    <img src="../../assets/left.png" id="cloudleft">
+    <img src="../../assets/right.png" id="cloudright">
 </div>
