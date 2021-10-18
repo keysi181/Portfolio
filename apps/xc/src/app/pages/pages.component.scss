@@ -1,9 +1,15 @@
+section{
+    height: 100vh;
+    padding-top: 10rem;
+    scroll-snap-align: start; 
 
-.blendercolor::before{
-    content: '';
-    position: absolute;
-    top: 89.5vh;
-    width: 100%;
-    height: 100px;
-    z-index: 9;
+    .blendercolor::before{
+        content: '';
+        position: absolute;
+        top: 88.5vh;
+        width: 100%;
+        height: 110px;
+        z-index: 9;
+    }
+
 }

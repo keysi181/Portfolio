@@ -13,12 +13,17 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
 import { ColorSchemeComponent } from './color_scheme/color_scheme.component';
 import { HeaderComponent } from './header/header.component';
+import { AboutComponent } from './pages/about/about.component';
+import { PagesRoutingModule } from './pages/pages-routing.module';
 import { PagesComponent } from './pages/pages.component';
+import { MerchComponent } from './pages/merch/merch.component';
+import { NewsComponent } from './pages/news/news.component';
+import { ContactComponent } from './pages/contact/contact.component';
 
 
 
 @NgModule({
-  declarations: [AppComponent, ColorSchemeComponent, PagesComponent, HeaderComponent],
+  declarations: [AppComponent, ColorSchemeComponent, PagesComponent, HeaderComponent, AboutComponent, MerchComponent, NewsComponent, ContactComponent],
   imports: [
     BrowserModule,
     HttpClientModule,
@@ -32,6 +37,8 @@ import { PagesComponent } from './pages/pages.component';
     MatToolbarModule,
     MatCardModule,
     FormsModule,
+    PagesRoutingModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent],
