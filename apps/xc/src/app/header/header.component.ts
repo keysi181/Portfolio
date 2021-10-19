@@ -100,15 +100,13 @@ export class HeaderComponent implements OnInit {
       case 'About':
         window.scrollTo({
           top: 833,
-          left: 833,
           behavior: 'smooth'
         })
         console.log(element)
         break;
       case 'News':
         window.scrollTo({
-          top: 1833,
-          left: 1833,
+          top: 1766,
           behavior: 'smooth'
         })
         console.log(element)
@@ -116,8 +114,7 @@ export class HeaderComponent implements OnInit {
     
       case 'Merch':
         window.scrollTo({
-          top: 2833,
-          left: 2833,
+          top: 2699,
           behavior: 'smooth'
         })
         console.log(element)
@@ -125,8 +122,7 @@ export class HeaderComponent implements OnInit {
     
       case 'Contact':
         window.scrollTo({
-          top: 3833,
-          left: 3833,
+          top: 3642,
           behavior: 'smooth'
         })
         console.log(element)

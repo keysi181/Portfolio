@@ -6,10 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./about.component.scss']
 })
 export class AboutComponent implements OnInit {
-
+  checkItemVal:number = 1
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  checkItem(i:number){
+    this.checkItemVal = i
   }
 
 }

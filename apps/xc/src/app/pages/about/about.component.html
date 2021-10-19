@@ -1,12 +1,32 @@
 <div class ="content">
-    <h1>
+    <h1 class="title">
         About me
     </h1>
-    <mat-card>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi ullam ratione voluptatum nostrum, natus, aut culpa harum veritatis quidem corrupti odit ex saepe, suscipit cumque sequi totam aliquam. Voluptatum, eaque.</p>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi ullam ratione voluptatum nostrum, natus, aut culpa harum veritatis quidem corrupti odit ex saepe, suscipit cumque sequi totam aliquam. Voluptatum, eaque.</p>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi ullam ratione voluptatum nostrum, natus, aut culpa harum veritatis quidem corrupti odit ex saepe, suscipit cumque sequi totam aliquam. Voluptatum, eaque.</p>
-        
-    </mat-card>
 
+    <div class="container">
+        <input type="radio" name="slider" id="item-1" [checked]="checkItemVal === 1">
+        <input type="radio" name="slider" id="item-2" [checked]="checkItemVal === 2">
+        <input type="radio" name="slider" id="item-3" [checked]="checkItemVal === 3">
+        <div class="cards">
+
+            <mat-card class="card" for="item-1" id="card-1" (click)="checkItem(1)">
+                <img src="../../../assets/Xiuwen.jpg">
+                <mat-card-title>Xiuwen Chen</mat-card-title>
+                <mat-card-subtitle>Webdeveloper</mat-card-subtitle>
+                <mat-card-content>
+                    <p>Age : 24</p>
+                    <div>
+                    </div>
+                </mat-card-content>
+            </mat-card>
+            <mat-card class="card" for="item-2" id="card-2" (click)="checkItem(2)">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi ullam ratione voluptatum nostrum, natus, aut culpa harum veritatis quidem corrupti odit ex saepe, suscipit cumque sequi totam aliquam. Voluptatum, eaque.</p> 
+            </mat-card>
+            <mat-card class="card" for="item-3" id="card-3" (click)="checkItem(3)">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi ullam ratione voluptatum nostrum, natus, aut culpa harum veritatis quidem corrupti odit ex saepe, suscipit cumque sequi totam aliquam. Voluptatum, eaque.</p>
+            </mat-card>
+        </div>
+    
+    </div>
 </div>
+

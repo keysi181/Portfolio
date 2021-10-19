@@ -5,6 +5,7 @@ import { MatButtonModule } from "@angular/material/button";
 import { MatCardModule } from '@angular/material/card';
 import { MatIconModule, MatIconRegistry } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
+import { MatRadioModule } from '@angular/material/radio';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatToolbarModule } from '@angular/material/toolbar';
@@ -14,12 +15,11 @@ import { AppComponent } from './app.component';
 import { ColorSchemeComponent } from './color_scheme/color_scheme.component';
 import { HeaderComponent } from './header/header.component';
 import { AboutComponent } from './pages/about/about.component';
-import { PagesRoutingModule } from './pages/pages-routing.module';
-import { PagesComponent } from './pages/pages.component';
+import { ContactComponent } from './pages/contact/contact.component';
 import { MerchComponent } from './pages/merch/merch.component';
 import { NewsComponent } from './pages/news/news.component';
-import { ContactComponent } from './pages/contact/contact.component';
-
+import { PagesRoutingModule } from './pages/pages-routing.module';
+import { PagesComponent } from './pages/pages.component';
 
 
 @NgModule({
@@ -38,6 +38,7 @@ import { ContactComponent } from './pages/contact/contact.component';
     MatCardModule,
     FormsModule,
     PagesRoutingModule,
+    MatRadioModule,
 
   ],
   providers: [],

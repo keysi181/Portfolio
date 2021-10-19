@@ -1,0 +1,15 @@
+@import '../../../colors.scss';
+.content{
+    padding-top: 4rem;
+    text-align: center;
+    transform-style: preserve-3d;
+    height: 100%;
+    flex-direction: column;
+    input[type=radio] {
+        display: none;
+    }
+    .title{
+        font-size: 2rem;
+        text-shadow: 5px 5px 5px $xc-pink
+    }
+}
